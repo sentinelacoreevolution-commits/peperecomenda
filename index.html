@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepe Recomenda | Links Oficiais</title>
+    
+    <meta name="description" content="Confira as melhores recomendações e ofertas curadas por Pepe Recomenda. Produtos úteis que valem a pena.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pepe Recomenda | Links Oficiais">
+    <meta property="og:description" content="Produtos úteis que realmente valem a pena. Acesse as ofertas e comunidades!">
+    <meta property="og:image" content="https://seusite.com/og-image.jpg">
+
+    <style>
+        :root {
+            --bg-primary: #0F172A;
+            --bg-secondary: #1E293B;
+            --btn-primary: #FACC15;
+            --btn-cta: #22C55E;
+            --text-white: #FFFFFF;
+            --text-muted: #94A3B8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-white);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 30px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid var(--bg-secondary);
+            margin-bottom: 16px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Seções */
+        .section-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin: 24px 0 12px 4px;
+            font-weight: 600;
+        }
+
+        .links-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Botões */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 18px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: transform 0.2s ease, filter 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn:active {
+            transform: scale(0.97);
+        }
+
+        .btn-amazon { background-color: var(--btn-primary); color: #000; }
+        .btn-community { background-color: var(--btn-cta); color: #fff; }
+        
+        .btn-promo {
+            background-color: var(--btn-cta);
+            color: #fff;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+
+        /* Ícones SVG */
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid var(--bg-secondary);
+        }
+
+        .disclaimer {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }@media (min-width: 768px) {
+            .btn:hover { filter: brightness(1.1); transform: translateY(-2px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="https://via.placeholder.com/150" alt="Pepe Recomenda" class="profile-img">
+            <h1>PEPE RECOMENDA</h1>
+            <p class="subtitle">Produtos úteis que realmente valem a pena</p>
+        </header>
+
+        <div class="links-group">
+            <a href="#" class="btn btn-amazon">📦 Ofertas da Amazon</a>
+            <a href="#" class="btn btn-amazon">⭐ Produtos que recomendo</a>
+            <a href="#" class="btn btn-amazon">🎥 Produtos dos vídeos</a>
+            <a href="#" class="btn btn-amazon">🛠️ Ferramentas que uso</a>
+            <a href="#" class="btn btn-promo">🔥 PROMOÇÕES DO DIA</a>
+        </div>
+
+        <p class="section-title">Nossas Comunidades</p>
+        <div class="links-group">
+            <a href="#" class="btn btn-community">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.316 1.592 5.43 0 9.856-4.426 9.858-9.855.002-2.631-1.02-5.105-2.871-6.958-1.854-1.853-4.329-2.876-6.963-2.876-5.431 0-9.856 4.426-9.858 9.857-.001 2.157.592 3.841 1.713 5.457l-1.112 4.067 4.167-1.084z"/></svg>
+                Comunidade WhatsApp
+            </a>
+            <a href="#" class="btn btn-community">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.891 8.146l-2.003 9.445c-.149.659-.541.823-1.091.516l-3.043-2.243-1.468 1.413c-.162.162-.298.298-.612.298l.219-3.111 5.662-5.116c.246-.219-.054-.341-.381-.123l-7.001 4.408-3.015-.944c-.655-.205-.667-.655.137-.968l11.771-4.535c.545-.198 1.022.129.865.954z"/></svg>
+                Canal no Telegram
+            </a>
+        </div>
+
+        <footer>
+            <p class="disclaimer">
+                <b>Transparência:</b> Como parceiro de programas de afiliados, posso receber uma pequena comissão por compras qualificadas através dos links acima, sem qualquer custo extra para você.
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
